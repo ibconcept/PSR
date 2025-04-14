@@ -1,1 +1,156 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSR Model v2 - Output Based Gig Work Evaluation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 960px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.5s ease-out;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2.8em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        header p {
+            color: #777;
+            font-size: 1.1em;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        section h2 {
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        .comparison-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: auto;
+            padding: 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 PSR v2: A New Model for Evaluating Gig Work</h1>
+            <p>By William Maina • Founder at IB Concept • ALX SE Grad</p>
+        </header>
+
+        <section>
+            <h2>Why PSR?</h2>
+            <p>The gig economy demands a model that rewards quality without adding bureaucracy. PSR—Problem, Solution, Result—gives a framework that pays based on performance, not promises. Version 2 introduces a scoring checklist to objectively evaluate outcomes.</p>
+        </section>
+
+        <section>
+            <h2>How PSR Works</h2>
+            <p>Each gig is broken down into three simple phases:</p>
+            <ul>
+                <li><strong>Problem</strong>: What's the task or issue?</li>
+                <li><strong>Solution</strong>: What's the delivered work?</li>
+                <li><strong>Result</strong>: How does it perform across the score checklist?</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Evaluation Metrics (Scored 1–3 per item)</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Metric</th>
+                        <th>Example Tool</th>
+                        <th>Score (1–3)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Page Speed</td><td>PageSpeed Insights</td><td>1 = <60, 2 = 60–89, 3 = 90+</td></tr>
+                    <tr><td>Accessibility</td><td>Lighthouse/WAVE</td><td>1 = <60, 2 = 60–89, 3 = 90+</td></tr>
+                    <tr><td>SEO Score</td><td>Ubersuggest/Lighthouse</td><td>1 = <60, 2 = 60–89, 3 = 90+</td></tr>
+                    <tr><td>Responsiveness</td><td>DevTools / BrowserStack</td><td>1 = major issues, 2 = minor, 3 = perfect</td></tr>
+                    <tr><td>Functionality</td><td>Manual Tests</td><td>1 = fails, 2 = partial, 3 = all pass</td></tr>
+                    <tr><td>Cross-platform</td><td>BrowserStack</td><td>1 = 1 browser, 2 = 3+, 3 = 5+</td></tr>
+                    <tr><td>Code Quality</td><td>ESLint / SonarLint</td><td>1 = major issues, 2 = few, 3 = clean</td></tr>
+                    <tr><td>UI Consistency</td><td>Manual Check</td><td>1 = inconsistent, 2 = mostly ok, 3 = pixel perfect</td></tr>
+                    <tr><td>Timeliness</td><td>Submission Date</td><td>1 = late, 2 = on-time, 3 = early</td></tr>
+                    <tr><td>User Experience</td><td>Heuristic Score</td><td>1 = poor, 2 = avg, 3 = great</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Scoring to Payment Table</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Total Score</th>
+                        <th>Payout (USD)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>10–15</td><td>$20</td></tr>
+                    <tr><td>16–20</td><td>$35</td></tr>
+                    <tr><td>21–24</td><td>$60</td></tr>
+                    <tr><td>25–28</td><td>$80</td></tr>
+                    <tr><td>29–30</td><td>$100</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Final Thoughts</h2>
+            <p>PSR v2 is designed for the modern gig world—fair, measurable, and fast. No politics, no fluff. Just problems solved and results paid. Want to use it? Fork it on GitHub or DM me. Let’s redefine freelance evaluation.</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 William Maina • <a href="https://github.com/ibconcept">GitHub</a> • <a href="https://linkedin.com/in/williammaina">LinkedIn</a></p>
+        </footer>
+    </div>
+</body>
+</html>
